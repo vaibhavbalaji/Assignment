@@ -1,0 +1,61 @@
+n = 'gGODod'
+res = ''
+for i in n.lower():
+    if i not in res:
+        res +=i
+print(res)
+
+class NumberRoot:
+    def perform_root(self,n,r):
+        return f'{r}th root of {n} is {n**(1/r):.2f}'
+obj = NumberRoot()
+num = input("Enter your input :").split()
+print(obj.perform_root(int(num[0]),int(num[1])))
+
+X = [1,2,3,4,5,6]
+print('Original List:', X)
+
+# List Reverse
+X.reverse()
+
+# updated list
+print('Updated List:', X)
+
+class Number:
+    def init (self,a,b,c):
+        a=self.a
+        b=self.b
+        c=self.c
+        print(a,b,c)
+    def get_smallest_number(self):
+        if(self.a<self.b and self.a<self.c):
+            return self.a
+        elif(self.b<self.a and self.b<self.c):
+            return self.b
+        elif(self.c<self.a and self.c<self.b):
+            return self.c
+        else:
+            print("corect number")
+    def get_largest_number(self):
+        if(self.a>self.b and self.a>self.c):
+            return self.a
+        elif(self.b>self.a and self.b>self.c):
+            return self.b
+        elif(self.c>self.a and self.c>self.b):
+            return self.c
+        else:
+            print("enter corect number")
+            
+        
+
+    try:
+        a=int(input("enter the input :"))
+        b=int(input("enter the input2 :"))
+        c=int(input("enter the input3 "))
+    except:
+        print("enter valid number")
+
+
+obj = Number()
+print(obj.get_smallest_number())
+print(obj.get_largest_number())
